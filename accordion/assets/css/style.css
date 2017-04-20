@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'jf_flatregular';
+    src: url('jf-flat-regular-webfont.woff2') format('woff2'),
+    url('jf-flat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+
+body, html {
+    min-height: 100%;
+}
+
+body {
+    background: #f6704b;
+}
+.container {
+    width: 380px;
+    margin: 35px auto 67px;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    height: 100px;
+    //background-color: #eee;
+    //color: #444;
+    cursor: pointer;
+    padding: 26px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    font-family: "JF Flat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.location {
+    background-color: #620808;
+}
+.music{
+    background-color: #a53f3f;
+}
+.notes{
+    background-color: #f4ce74;
+}
+.books{
+    background-color: #ffe9c1;
+}
+.tendances {
+    background-color: #d5441c;
+}
+
+.image {
+    margin-right: 55px;
+}
