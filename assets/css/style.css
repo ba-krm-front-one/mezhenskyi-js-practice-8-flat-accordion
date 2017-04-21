@@ -44,17 +44,12 @@ button.accordion {
     outline: none;
     transition: 0.4s;
 
-    font-family: "JF Flat", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    vertical-align: middle;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
+/*button.accordion.active, button.accordion:hover {*/
+    /*background-color: #ddd;*/
+/*}*/
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
@@ -67,22 +62,59 @@ button.accordion.active, button.accordion:hover {
     display: block;
 }
 
-.location {
+.location,
+.location-panel {
     background-color: #620808;
 }
-.music{
+.location:hover  {
+    background-color: rgba(98, 8, 8, 0.5);
+}
+.music,
+.music-panel {
     background-color: #a53f3f;
 }
-.notes{
+.music:hover {
+    background-color: rgba(165, 63, 63, 0.5);
+}
+.notes,
+.notes-panel {
     background-color: #f4ce74;
 }
-.books{
+.notes:hover {
+    background-color: rgba(244, 206, 116, 0.5);
+}
+.books,
+.books-panel {
     background-color: #ffe9c1;
 }
-.tendances {
+.books:hover {
+    background-color: rgba(255, 233, 193, 0.5);
+}
+.tendances,
+.tendances-panel {
     background-color: #d5441c;
 }
-
+.tendances:hover  {
+    background-color: rgba(213, 68, 28, 0.5);
+}
+.title {
+    display: inline-block;
+    font-family: "JF Flat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-top: -15px;
+}
+.panel-text {
+    margin: 0;
+    padding: 15px 5px;
+}
 .image {
     margin-right: 55px;
+}
+
+.shadow {
+    box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.25);
+    opacity: 0.94;
 }
